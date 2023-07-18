@@ -11,10 +11,16 @@ public class Main {
          */
 
         Scanner scan = new Scanner(System.in);
+        System.out.println("quanto misura la base del rettangolo ?");
         int baseUtente = scan.nextInt();
+        System.out.println("quanto misura l'altezza del rettangolo ?");
         int altezzaUtente =scan.nextInt();
 
 
         Rettangolo r = new Rettangolo(baseUtente, altezzaUtente);
+
+        System.out.println("l'area è uguale a: " + r.calcolaArea());
+        System.out.println("il perimetro è uguale a: " + r.calcolaPerimetro());
+
     }
 }
